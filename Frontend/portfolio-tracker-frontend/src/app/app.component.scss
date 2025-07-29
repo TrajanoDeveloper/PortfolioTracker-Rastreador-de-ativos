@@ -1,0 +1,65 @@
+.sidenav-container {
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.sidenav {
+  width: 250px;
+  background-color: var(--surface-color);
+  border-right: 1px solid #3a3f51;
+}
+
+.sidenav-header {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.main-toolbar {
+  background-color: var(--surface-color);
+  color: white;
+  border-bottom: 1px solid #3a3f51;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.last-update {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.main-content {
+  padding: 20px;
+  min-height: calc(100vh - 64px);
+  background-color: var(--background-color);
+}
+
+// Active menu item
+.active {
+  background-color: rgba(231, 76, 60, 0.1) !important;
+  border-right: 3px solid var(--accent-color);
+  
+  mat-icon {
+    color: var(--accent-color);
+  }
+  
+  span {
+    color: var(--accent-color);
+    font-weight: 600;
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .sidenav {
+    width: 200px;
+  }
+  
+  .main-content {
+    padding: 10px;
+  }
+}
+

@@ -1,0 +1,45 @@
+<div class="cotacoes-container">
+  <h1 class="page-title">Cotações em Tempo Real - CONSOLIDADO</h1>
+  
+  <div class="cotacoes-grid">
+    <mat-card *ngFor="let cotacao of cotacoes" class="cotacao-card">
+      <mat-card-header>
+        <div class="cotacao-header">
+          <div class="ticker">{{ cotacao.ticker }}</div>
+          <div class="preco-atual">R$ {{ cotacao.precoAtual }}</div>
+        </div>
+      </mat-card-header>
+      
+      <mat-card-content>
+        <div class="cotacao-info">
+          <div class="nome">{{ cotacao.nome }}</div>
+          
+          <div class="metricas">
+            <div class="metrica">
+              <span class="label">Preço Atual:</span>
+              <span class="value">R$ {{ cotacao.precoAtual }}</span>
+            </div>
+            
+            <div class="metrica">
+              <span class="label">Variação:</span>
+              <span class="value" [class]="getVariacaoClass(cotacao.variacao)">
+                {{ cotacao.variacao >= 0 ? '+' : '' }}{{ cotacao.variacao }}%
+              </span>
+            </div>
+            
+            <div class="metrica">
+              <span class="label">Volume:</span>
+              <span class="value">{{ cotacao.volume }}</span>
+            </div>
+            
+            <div class="metrica">
+              <span class="label">Valor Total:</span>
+              <span class="value total">{{ cotacao.valorTotal }}</span>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+

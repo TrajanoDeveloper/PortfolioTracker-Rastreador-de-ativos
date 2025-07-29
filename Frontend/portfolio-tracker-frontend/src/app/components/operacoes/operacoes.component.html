@@ -1,0 +1,72 @@
+<div class="operacoes-container">
+  <div class="header">
+    <h1>Histórico de Operações</h1>
+    <button mat-raised-button color="primary" (click)="novaOperacao()">
+      <mat-icon>add</mat-icon>
+      Nova Operação
+    </button>
+  </div>
+
+  <mat-card class="table-card">
+    <mat-card-content>
+      <div class="table-container">
+        <table mat-table [dataSource]="operacoes" class="operacoes-table">
+          <!-- Coluna Data -->
+          <ng-container matColumnDef="data">
+            <th mat-header-cell *matHeaderCellDef>DATA</th>
+            <td mat-cell *matCellDef="let operacao">{{ operacao.data }}</td>
+          </ng-container>
+
+          <!-- Coluna Ativo -->
+          <ng-container matColumnDef="ativo">
+            <th mat-header-cell *matHeaderCellDef>ATIVO</th>
+            <td mat-cell *matCellDef="let operacao">
+              <div class="ativo-info">
+                <div class="ticker">{{ operacao.ativo }}</div>
+                <div class="nome">{{ operacao.nome }}</div>
+              </div>
+            </td>
+          </ng-container>
+
+          <!-- Coluna Tipo -->
+          <ng-container matColumnDef="tipo">
+            <th mat-header-cell *matHeaderCellDef>TIPO</th>
+            <td mat-cell *matCellDef="let operacao">
+              <mat-chip [style.background-color]="getTipoColor(operacao.tipo)">
+                {{ operacao.tipo }}
+              </mat-chip>
+            </td>
+          </ng-container>
+
+          <!-- Coluna Quantidade -->
+          <ng-container matColumnDef="quantidade">
+            <th mat-header-cell *matHeaderCellDef>QUANTIDADE</th>
+            <td mat-cell *matCellDef="let operacao">{{ operacao.quantidade }}</td>
+          </ng-container>
+
+          <!-- Coluna Preço -->
+          <ng-container matColumnDef="preco">
+            <th mat-header-cell *matHeaderCellDef>PREÇO</th>
+            <td mat-cell *matCellDef="let operacao">{{ operacao.preco }}</td>
+          </ng-container>
+
+          <!-- Coluna Valor Total -->
+          <ng-container matColumnDef="valorTotal">
+            <th mat-header-cell *matHeaderCellDef>VALOR TOTAL</th>
+            <td mat-cell *matCellDef="let operacao" class="valor-total">{{ operacao.valorTotal }}</td>
+          </ng-container>
+
+          <!-- Coluna Observações -->
+          <ng-container matColumnDef="observacoes">
+            <th mat-header-cell *matHeaderCellDef>OBSERVAÇÕES</th>
+            <td mat-cell *matCellDef="let operacao">{{ operacao.observacoes }}</td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
