@@ -1,23 +1,61 @@
-# Portfolio Tracker
+# 📊Portfolio Ativos(Em desenvolvimento)
 
-Sistema completo para acompanhamento de carteira de investimentos desenvolvido em ASP.NET Core 9 e Angular.
+Sistema para acompanhamento de carteira de investimentos desenvolvido em ASP.NET Core 9 e Angular.
 
 ## 🏗️ Arquitetura
 
 O projeto segue uma arquitetura em camadas (Clean Architecture) organizada da seguinte forma:
 
 ```
-PortfolioTracker/
-├── src/
-│   ├── 1-PRESENTATION/          # Camada de Apresentação
-│   │   └── PortfolioTracker.API/    # Web API
-│   ├── 2-APPLICATION/           # Camada de Aplicação
-│   │   └── PortfolioTracker.Application/  # Services, DTOs, Interfaces
-│   ├── 3-DOMAIN/               # Camada de Domínio
-│   │   └── PortfolioTracker.Domain/       # Entities, Enums, Interfaces
-│   └── 4-INFRASTRUCTURE/       # Camada de Infraestrutura
-│       └── PortfolioTracker.Infrastructure/  # Data, Repository, Reports
-└── PortfolioTracker.sln        # Solution do Visual Studio
+PortfolioAtivos/
+├── 1-PRESENTATION         
+│   │   ├── PortfolioTracker.API/
+|   |   ├── Dependências
+|   |   ├── Properties
+|   |   └── Controllers
+│   │   |   └── AtivosController.cs
+|   |   ├── appsettings.json
+|   |   ├── PortfolioTracker.API.http
+|   |   └── Program.cs
+│   ├── 2-APPLICATION           
+│   │   ├── PortfolioAtivos.Application/
+|   |   ├── Dependências
+|   |   ├── DTO
+│   │   |   ├── AtivoDto.cs
+│   │   |   ├── DashboardDto.cs
+│   │   |   └── OperacaoDto.cs
+|   |   ├── Interfaces
+│   │   |   ├── IAtivoService.cs
+│   │   |   ├── IDashboardService.cs
+│   │   |   └── IOperacaoService.cs
+|   |   ├── Mappings
+│   │   |   └── AutoMapperProfile.cs
+|   |   ├── Services
+│   │   |   └── AtivoService.cs
+│   ├── 3-DOMAIN              
+│   │   ├── PortfolioAtivos.Domain/
+|   |   ├── Dependências
+|   |   ├── Entities
+│   │   |   ├── Ativo.cs
+│   │   |   ├── Carteira.cs
+│   │   |   ├── Cotacao.cs
+│   │   |   ├── Operacao.cs
+│   │   |   ├── Posicao.cs
+│   │   |   └── Usuario.cs
+|   |   ├── Enus
+│   │   |   ├── TipoAtivo.cs
+│   │   |   └── TipoOperacao.cs      
+│   ├── 4-INFRASTRUCTURE       
+│   |    ├── PortfolioAtivos.Infrastructure/
+|   |    ├── Dependências
+|   |    ├── Data
+│   │    |  └── PortfolioAtivosContext.cs
+|   |    ├── Repository
+│   │    |  ├── Repository.cs
+│   │    |  └── UnitOfWork.cs
+
+
+
 ```
 
 ## 🚀 Tecnologias Utilizadas
@@ -143,41 +181,12 @@ dotnet test
 dotnet test --filter Category=Integration
 ```
 
-## 📦 Deploy
+⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório! ⭐
 
-### Desenvolvimento
-```bash
-dotnet publish -c Release -o ./publish
-```
+Desenvolvido com ❤️ usando ASP.NET Core
 
-### Produção
-- Configurar connection string para SQL Server de produção
-- Configurar variáveis de ambiente
-- Deploy via Azure App Service, IIS ou Docker
+## Contato
+alexandre.trajano@gmail.com
 
-## 🤝 Contribuição
-
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 👥 Autores
-
-- **Manus AI** - Desenvolvimento inicial
-
-## 📞 Suporte
-
-Para suporte, abra uma issue no GitHub ou entre em contato através do email.
-
----
-
-**Status do Projeto:** 🚧 Em Desenvolvimento Ativo
-
-**Última Atualização:** 28/07/2025
+www.linkedin.com/in/alexandre-trajano-b3417a39
 
