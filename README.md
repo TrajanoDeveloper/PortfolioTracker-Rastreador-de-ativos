@@ -8,7 +8,8 @@ O projeto segue uma arquitetura em camadas (Clean Architecture) organizada da se
 
 ```
 PortfolioAtivos/
-├── 1-PRESENTATION         
+├── SCR
+|   ├── 1-PRESENTATION         
 │   │   ├── PortfolioTracker.API/
 |   |   ├── Dependências
 |   |   ├── Properties
@@ -46,13 +47,13 @@ PortfolioAtivos/
 │   │   |   ├── TipoAtivo.cs
 │   │   |   └── TipoOperacao.cs      
 │   ├── 4-INFRASTRUCTURE       
-│   |    ├── PortfolioAtivos.Infrastructure/
-|   |    ├── Dependências
-|   |    ├── Data
-│   │    |  └── PortfolioAtivosContext.cs
-|   |    ├── Repository
-│   │    |  ├── Repository.cs
-│   │    |  └── UnitOfWork.cs
+│   |   ├── PortfolioAtivos.Infrastructure/
+|   |   ├── Dependências
+|   |   ├── Data
+│   │   |   └── PortfolioAtivosContext.cs
+|   |   ├── Repository
+│   │   |   ├── Repository.cs
+│   │   |   └── UnitOfWork.cs
 
 
 
