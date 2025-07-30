@@ -63,7 +63,11 @@ PortfolioAtivos/
 
    🖼 Telas de Dashborad
 
-![Tela de Login](imgaem/dashborad.PNG)
+![Tela de Dashborad](Imagens/dashborad.PNG)
+
+![Tela de Ativos](Imagens/tela_ativos.PNG)    
+
+
 
 ## 🚀 Tecnologias Utilizadas
 
