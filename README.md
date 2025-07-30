@@ -61,27 +61,27 @@ PortfolioAtivos/
 
 ## 🖼 Protótipos de telas
 
-   🖼 Telas de Dashborad
+   🖼 Telas de Dashborad - protótipo
 
 ![Tela de Dashborad](Imagens/dashborad.PNG)
 
-🖼 Telas de Ativos
+🖼 Telas de Ativos - protótipo
 
 ![Tela de Ativos](Imagens/tela_ativos.PNG)  
 
-🖼 Telas de Cadastro de Ativos
+🖼 Telas de Cadastro de Ativos - protótipo
 
 ![Tela de Ativos](Imagens/cadastro_ativo.PNG) 
 
-🖼 Telas de Operações
+🖼 Telas de Operações - protótipo
 
 ![Tela de Ativos](Imagens/tela_operações.PNG)
 
-🖼 Telas de Cadastro de Operações
+🖼 Telas de Cadastro de Operações - protótipo
 
 ![Tela de Ativos](Imagens/cadastro_operações.PNG)
 
-🖼 Telas de Cotações
+🖼 Telas de Cotações - protótipo
 
 ![Tela de Ativos](Imagens/Tela_cotações.PNG)
 
