@@ -65,7 +65,25 @@ PortfolioAtivos/
 
 ![Tela de Dashborad](Imagens/dashborad.PNG)
 
-![Tela de Ativos](Imagens/tela_ativos.PNG)    
+🖼 Telas de Ativos
+
+![Tela de Ativos](Imagens/tela_ativos.PNG)  
+
+🖼 Telas de Cadastro de Ativos
+
+![Tela de Ativos](Imagens/cadastro_ativo.PNG) 
+
+🖼 Telas de Operações
+
+![Tela de Ativos](Imagens/tela_operações.PNG)
+
+🖼 Telas de Cadastro de Operações
+
+![Tela de Ativos](Imagens/cadastro_operações.PNG)
+
+🖼 Telas de Cotações
+
+![Tela de Ativos](Imagens/Tela_cotações.PNG)
 
 
 
